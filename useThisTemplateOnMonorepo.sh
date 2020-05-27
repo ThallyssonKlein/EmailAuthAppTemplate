@@ -2,4 +2,4 @@
 
 wget "https://codeload.github.com/ThallyssonKlein/EmailAuthAppTemplate/zip/master"
 unzip master
-rm EmailAuthAppTemplate-master.zip
+rm master
