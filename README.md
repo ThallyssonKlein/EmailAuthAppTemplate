@@ -13,5 +13,5 @@ wget https://raw.githubusercontent.com/ThallyssonKlein/EmailAuthAppTemplate/mast
 [feature]: https://github.com/react-native-community/cli/issues/927
 
 # Todo
-- [ ] OAuth Fork
+- [X] OAuth Fork
 - [ ] Backend Example
