@@ -13,5 +13,8 @@ wget https://raw.githubusercontent.com/ThallyssonKlein/EmailAuthAppTemplate/mast
 [feature]: https://github.com/react-native-community/cli/issues/927
 
 # Todo
-- [X] OAuth Fork
+- [X] [OAuth Fork](https://github.com/ThallyssonKlein/OAuth2AppTemplate)
 - [ ] Backend Example
+
+
+**Ps:** Remember to [change the package name](https://stackoverflow.com/questions/37389905/change-package-name-for-android-in-react-native)
