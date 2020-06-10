@@ -32,6 +32,7 @@ export default TextInput = React.forwardRef((props, ref) => {
           }}
           secureTextEntry={props.secure}
           ref={ref}
+          autoCapitalize='none'
         />
       </View>
     );

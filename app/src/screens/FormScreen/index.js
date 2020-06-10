@@ -1,12 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { View, Text, TouchableOpacity, Linking } from 'react-native';
+import { View, Text, TouchableOpacity, Linking, Alert } from 'react-native';
 
 import BorderLayout from '@thallyssonklein/border-layout-react-native';
 
-import Button from '../components/Button';
-import Logo from '../components/Logo';
-import TextInput from '../components/TextInput';
-import ErrorMessage from '../components/ErrorMessage';
+import Button from '../../components/Button';
+import Logo from '../../components/Logo';
+import TextInput from '../../components/TextInput';
+import ErrorMessage from '../../components/ErrorMessage';
+
+import ObjToFormData from './ObjToFormData';
+import Auth from '../../backend/Auth';
 
 export default Form = ({navigation}) => {
   const [ step, setStep ] = useState(0);
@@ -21,11 +24,21 @@ export default Form = ({navigation}) => {
 
   useEffect(() => {
       if(formValues.finish){
-        console.log(formValues); //Send to your API
-        navigation.navigate("Hello");
+        finish();
       }
   }, [formValues]);
 
+  async function finish(){
+    delete formValues.finish;
+    const success = await Auth(ObjToFormData(formValues));
+    if(success){
+     navigation.navigate("Home");
+     console.log("Sucesso");
+     
+    }else{
+      Alert.alert("Erro ao se autenticar!");
+    }
+  }
   useEffect(() => {
       setError("");
   }, [step]);
