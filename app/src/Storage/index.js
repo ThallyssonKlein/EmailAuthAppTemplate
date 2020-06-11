@@ -1,8 +1,15 @@
 import { AsyncStorage } from 'react-native';
-import { XStorage } from 'react-native-easy-app';
+import { APP_NAME } from 'react-native-dotenv';
 
-export const RNStorage = {
-    token: undefined,
-};
+const createOrUpdate = async(key, content) =>{
+    await AsyncStorage.setItem('@' + APP_NAME + ":" + key, new String(content));
+}
+const read = async(key) =>{
+    await AsyncStorage.getItem('@' + APP_NAME + ":" + key);
+}
 
-XStorage.initStorage(RNStorage, AsyncStorage);   
+const remove = async(key) =>{
+    await AsyncStorage.removeItem('@' + APP_NAME + ":" + key);
+}
+
+export { createOrUpdate, read, remove }

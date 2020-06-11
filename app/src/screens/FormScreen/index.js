@@ -32,9 +32,7 @@ export default Form = ({navigation}) => {
     delete formValues.finish;
     const success = await Auth(ObjToFormData(formValues));
     if(success){
-     navigation.navigate("Home");
-     console.log("Sucesso");
-     
+        navigation.navigate("Home");     
     }else{
       Alert.alert("Erro ao se autenticar!");
     }

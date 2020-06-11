@@ -11,6 +11,7 @@
     "android-linux": "react-native run-android --terminal \"$PWD/shkonsole\""
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.4.3",
     "@react-navigation/stack": "^5.4.0",
@@ -19,7 +20,6 @@
     "native-base": "^2.13.12",
     "react": "16.11.0",
     "react-native": "0.62.2",
-    "react-native-easy-app": "^1.7.3",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-paper": "^3.10.1",
     "react-native-reanimated": "^1.9.0",
@@ -34,6 +34,7 @@
     "eslint": "^7.1.0",
     "jest": "^26.0.1",
     "metro-react-native-babel-preset": "^0.59.0",
+    "react-native-dotenv": "^0.2.0",
     "react-test-renderer": "16.11.0"
   },
   "jest": {
