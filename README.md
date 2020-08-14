@@ -1,5 +1,3 @@
-Currently watching for this [feature] to use this template on Github Packages private registry.
-
 For now you can use this repository as a template, and if you use the monorepo approach, do this:
 
 ```
