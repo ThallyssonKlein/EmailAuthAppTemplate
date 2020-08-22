@@ -1,5 +1,5 @@
 {
-  "name": "react-native-template-tk-email-app",
+  "name": "@thallyssonklein/react-native-template-tk-email-app",
   "version": "0.0.4",
   "private": false,
   "scripts": {
@@ -38,5 +38,10 @@
   },
   "jest": {
     "preset": "react-native"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "repository": {
+    "type" : "git",
+    "url": "git://github.com/ThallyssonKlein/.git"
   }
 }
